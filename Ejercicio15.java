@@ -11,6 +11,7 @@
  * → @author Denisa Ramona Belean
  *   https://github.com/denibel04 ☆
  */
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Ejercicio15 {
     public static void main (String[] args) {
@@ -38,7 +39,7 @@ public class Ejercicio15 {
             }
             System.out.println("│\n└────────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
 
-            System.out.print("¿Cuántos son? (Introduzca -1 para salir del programa):");
+            System.out.print("¿Cuántos son? (Introduzca -1 para salir del programa): ");
             clientes = sc.nextInt();
 
             boolean hayMesa = false;
@@ -69,6 +70,8 @@ public class Ejercicio15 {
                 if (!hayMesa) {
                     System.out.println("Lo siento, en estos momentos no quedas sitio");
                 }
+            } else {
+                System.out.println("Gracias. Hasta pronto !");
             }
         } while (clientes != -1);
 
